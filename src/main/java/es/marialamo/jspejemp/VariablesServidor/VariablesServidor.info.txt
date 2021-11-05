@@ -1,0 +1,9 @@
+Funcionalidad: 
+  Muestra el valor de ciertas variables de la configuración del servidor y de la solicitud del cliente.
+
+Elementos de JSP:
+- Comentarios <%-- ... --%>
+- Directiva <%@page %>
+- Scriptlets <% ... %>
+
+

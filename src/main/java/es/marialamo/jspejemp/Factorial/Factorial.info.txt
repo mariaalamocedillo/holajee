@@ -1,0 +1,17 @@
+Funcionalidad:
+  Devuelve el factorial del número introducido en un formulario. Controla que no se introduzca ning�n
+número o que se envíe un carácter no numérico.
+  Está preparado para recibir por parámetro el número sobre el que se operará.
+  - Si no se recibe, muestra el formulario para introducir el número. Al enviarlo, se llama
+a sí mismo.
+  - Si se recibe, muestra igualmente el formulario y el factorial del número que se recibió,
+siempre y cuando sea correcto (no nulo y numérico). Hace uso de la función/método factorial,
+declarada en el propio JSP.
+
+
+Elementos de JSP:
+- Directiva <%@page %>
+- Scriptlets <% ... %>
+- Declaración de la función/método factorial
+
+

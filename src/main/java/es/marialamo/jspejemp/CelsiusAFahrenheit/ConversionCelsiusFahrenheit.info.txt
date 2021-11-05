@@ -1,0 +1,14 @@
+Funcionalidad: 
+  Es una página preparada para recibir un parámetro que representa grados Celsius.
+  - Si no lo recibe, muestra un formulario para introducir una temperatura en Celsius.
+    Al enviar los datos, se llama a sí mismo.
+  - Si lo recibe, trata de realizar la operación de conversión a grados Farenheit.
+    . Si lo puede hacer, muestra el texto Farenheit y el valor convertido.
+    . Si no lo puede hacer, muestra el texto Farenheit.
+
+Elementos de JSP:
+- Comentarios <%-- ... --%>
+- Directiva <%@page %>
+- Scriptlets <% ... %>
+- Expresiones como <%= farenheit %>
+

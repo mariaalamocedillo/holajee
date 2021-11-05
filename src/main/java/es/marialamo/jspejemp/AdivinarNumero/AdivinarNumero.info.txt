@@ -1,0 +1,20 @@
+Funcionalidad:
+  Juego de adivinanza de un número de 1 a 100 con pistas.
+  Está preparado para recibir un parámetro que representa el número que se prueba:
+  - Si no lo recibe, muestra el formulario solicitando el número. Se introduce en el
+  formulario y se envía a sí mismo.
+  - Si lo recibe, muestra cómo ha ido el intento.
+    . Si se acertó, indica en cuantos se logró.
+    . Si no se acertó, da una pista de si el número intentado es menor o mayor del que se quiere adicinar.
+  Si se pasa un número en blanco o un carácter no numérico lo trata como un número
+intentado y fallado.
+  Hace uso de una clase de apoyo (bean) que realiza las operaciones de generación de nuevo
+número, comprobación del número intentado con el número a adivinar, ofrecer pistas...
+
+Elementos de JSP:
+- Comentarios <%-- ... --%>
+- Directiva <%@page %>
+- Scriptlets <% ... %>
+- Expresiones como <% adivinarNumero.volverAEmpezar(); %>
+- Acciones como <jsp:useBean ... /> o <jsp:setProperty ... />
+

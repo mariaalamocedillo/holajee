@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <title>Formulario EcoParámetros</title>
+  <style type="text/css"> 
+    body {border:2px solid; padding: 10px; width: 800px}
+    h1 {margin: 10px; text-align: center;}
+  </style>
+ </head>
+ 
+ <body>
+  <h1>EcoParametros</h1>
+  <form name="f1" action="Eco" method="get">
+   <b>1. CAMPOS DE TEXTO:</b> <br />
+   Nombre: <input type="text" name="txtNombre" value="Pepe" /> <br />
+   Contraseña: <input type="password" name="pswClave" /> <br />
+   Oculto: <input type="hidden" name="hdnOculto" value="invisible" /> <br />
+   <hr />
+   <b>2. RADIO BUTTON:</b> <br />
+   &nbsp;&nbsp; Rojo <input type="radio" value="Rojo" name="rdSemaforo" /> <br />
+   &nbsp;&nbsp; Naranja <input type="radio" value="Naranja" name="rdSemaforo" checked="checked" /> <br />
+   &nbsp;&nbsp; Verde <input type="radio" value="Verde" name="rdSemaforo" /> <br />
+   <hr />
+   <b>3. CHECKBOX:</b> <br />
+   <b>Simple:</b><br />
+   &nbsp;&nbsp; Quiero recibir publicidad <input type="checkbox" name="cbPublicidad" value="Publicidad"/> <br />
+   <b>Múltiple</b>: <br />
+   <!-- Se declara el nombre terminado en [] para tratarlo como un array -->
+   &nbsp;&nbsp; <label>Inglés</label> <input type="checkbox" name="cbIdioma[]" value="English" /> 
+   &nbsp;&nbsp; Francés <input type="checkbox" name="cbIdioma[]" checked="checked" value="Francaise" />
+   &nbsp;&nbsp; Alemán <input type="checkbox" name="cbIdioma[]" value="Deutsch" />
+   <hr />
+   <b>4. SELECT: </b> <br />
+   <b>Simple:</b> <br />
+   Año de finalización de estudios:
+   <select name="selAnioFinEstudios">
+	<option value="2010">2010</option>  
+  	<option value="2011" selected="selected">2011</option>
+  	<option value="2012">2012</option>	
+   </select>
+   <br />
+   <b>Múltiple:</b> <br />
+   Ciudades:
+   <!-- Se declara el nombre terminado en [] para tratarlo como un array -->
+   <select name="selCodigosPostales[]" multiple="multiple">
+  	<option value="17">Gerona</option>  
+  	<option value="28" selected="selected">Madrid</option>
+  	<option value="50" selected="selected">Zaragoza</option>
+   </select>
+   <br />
+   <hr />
+   <b>5. TEXTAREA:</b> <br />  
+   <textarea name="txaComentarios" rows="4" cols="40">
+   Escriba aqui sus comentarios...
+   </textarea>
+   <hr />
+   <b>6. ARCHIVO:</b> <br />  
+   <input type="file" name="flArchivo" />
+   <hr />
+   <b>7. BOTONES:</b> <br />  
+   <input type="button" value="Mostrar un mensaje" onclick="alert('Un botón genérico');" />
+   <input type="reset" value="Resetear el formulario" />
+   <input type="submit" value="Enviar formulario al servidor" />
+   </form>
+ </body>
+</html>
